@@ -15,5 +15,5 @@ function function1() {
   ul.appendChild(li);
 }
 
-placeImage(75);
+placeImage(72);
 function1();
