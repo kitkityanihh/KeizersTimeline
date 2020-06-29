@@ -2,7 +2,7 @@ var placeImagee = function (x) {
   var img = "";
   for (var counter = 1; counter <= x; counter++) {
     img +=
-      '<li><img class="zoom" src="img/new/img  (' +
+      '<li><img src="img/new/img  (' +
       counter +
       ').jpg" alt="" /></li>';
   }
@@ -22,7 +22,7 @@ var placeImageee = function (x) {
   var img = "";
   for (var counter = 1; counter <= x; counter++) {
     img +=
-      '<li><img class="zoom" src="img/1yr/img (' +
+      '<li><img src="img/1yr/img (' +
       counter +
       ').jpg" alt="" /></li>';
   }
@@ -42,7 +42,7 @@ var placeImageeee = function (x) {
   var img = "";
   for (var counter = 1; counter <= x; counter++) {
     img +=
-      '<li><img class="zoom" src="img/2yr/img (' +
+      '<li><img src="img/2yr/img (' +
       counter +
       ').jpg" alt="" /></li>';
   }
@@ -62,7 +62,7 @@ var placeImageeeee = function (x) {
   var img = "";
   for (var counter = 1; counter <= x; counter++) {
     img +=
-      '<li><img class="zoom" src="img/3yr/img (' +
+      '<li><img src="img/3yr/img (' +
       counter +
       ').jpg" alt="" /></li>';
   }

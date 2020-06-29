@@ -2,7 +2,7 @@ var placeImage = function (x) {
   var img = "";
   for (var counter = 1; counter <= x; counter++) {
     img +=
-      '<li><img class="zoom" src="img/0/img (' +
+      '<li><img src="img/0/img (' +
       counter +
       ').jpg" alt="" /></li>';
   }
