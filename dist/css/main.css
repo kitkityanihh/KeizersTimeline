@@ -225,10 +225,6 @@
   .cb-slideshow li div h3 {
     font-size: 80px; } }
 
-@media screen and (min-width: 599px) {
-  .cb-slideshow li div h3 {
-    font-size: 40px; } }
-
 /*test page template*/
 * {
   margin: 0;
