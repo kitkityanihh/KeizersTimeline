@@ -52,6 +52,13 @@
   li {
     height: 80vh;
   }
+  .zoom {
+    transition: none;
+  }
+
+  .zoom:hover {
+    transform: none;
+  }
 }
 
 // Smaller screens in portrait
@@ -87,5 +94,12 @@
       padding: 1rem;
       height: 5rem;
     }
+  }
+  .zoom {
+    transition: none;
+  }
+
+  .zoom:hover {
+    transform: none;
   }
 }
