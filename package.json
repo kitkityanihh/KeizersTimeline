@@ -1,0 +1,15 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "KIT",
+  "license": "MIT",
+  "dependencies": {
+    "bourbon": "^7.0.0",
+    "node-sass": "^4.14.1"
+  }
+}

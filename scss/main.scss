@@ -1,0 +1,274 @@
+@import "slideshow";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+/*test page template*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Fredoka One", cursive;
+  background-color: rgb(75, 219, 255);
+  word-break: break-all;
+  height: 100%;
+}
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img {
+  border: 0;
+}
+
+h1 {
+  font-family: "Fredoka One", cursive;
+  color: #ffffff;
+  text-shadow: 0 0 7px #2f20ff;
+  padding-top: 5%;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font: normal 115% "century gothic", arial, sans-serif;
+  color: #068900;
+}
+
+.left {
+  float: left;
+  width: auto;
+  padding-left: 5rem;
+}
+
+.right {
+  float: right;
+  width: auto;
+  margin-left: 10px;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main,
+#logo,
+#menubar,
+#site_content,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  height: 95vh;
+}
+
+#logo h1,
+#logo h2 {
+  font: normal 300% "century gothic", arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1,
+#logo_text h1 a,
+#logo_text h1 a:hover {
+  padding: 22px 0 0 0;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+  color: #27a8f3;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+.clr {
+  clear: both;
+}
+.container > header {
+  padding: 30px 30px 10px 20px;
+  margin: 0px 20px 10px 20px;
+  position: relative;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.container > header h1 {
+  font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  position: relative;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 0px 0px 5px 0px;
+}
+.container > header h2,
+p.info {
+  font-size: 16px;
+  font-style: italic;
+  color: #f8f8f8;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+#site_content {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+}
+
+.sidebar {
+  float: right;
+  width: 190px;
+  padding: 0 15px 20px 15px;
+}
+
+.sidebar ul {
+  width: 178px;
+  padding: 4px 0 0 0;
+  margin: 4px 0 30px 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 0 0 7px 0;
+}
+
+.sidebar li a,
+.sidebar li a:hover {
+  padding: 0 0 0 40px;
+  display: block;
+  background: transparent url(link.png) no-repeat left center;
+}
+
+.sidebar li a.selected {
+  color: #444;
+  text-decoration: none;
+}
+
+#content {
+  text-align: left;
+  padding: 0;
+}
+// Footer
+#main-footer {
+  background-color: red($color: #4144f7);
+  color: #fff;
+  height: 5rem;
+  text-align: center;
+  float: center;
+  margin-left: 2rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: red($color: #523eff);
+      }
+    }
+  }
+}
+.container {
+  max-width: 1280px;
+  padding: 0 1.5em;
+  margin: auto;
+  overflow: hidden;
+}
+/*easy scroll dots - codepenVersion*/
+
+.scroll-indicator-controller {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 20px;
+  z-index: 2;
+}
+
+.scroll-indicator-controller > div {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgb(24, 0, 163);
+  background: rgba(0, 0, 0, 0.25);
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  will-change: transition;
+}
+.scroll-indicator-controller > div span {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: calc(100% + 8px);
+  white-space: nowrap;
+  letter-spacing: 2px;
+  top: -1px;
+  font-size: 1.5rem;
+  line-height: 17px;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.4s ease;
+  will-change: transition;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-text-stroke: 0.3px rgb(0, 81, 255);
+}
+.scroll-indicator-controller > div span:after {
+  content: "---";
+  padding-left: 5px;
+  letter-spacing: -2px;
+  font-family: arial, sans-serif;
+  vertical-align: text-top;
+  font-weight: 400;
+}
+
+/// BASIC
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+li {
+  height: 40vh;
+  flex-grow: 1;
+}
+
+li:last-child {
+  // There's no science in using "10" here. In all my testing, this delivered the best results.
+  flex-grow: 10;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+@import "mobile";
