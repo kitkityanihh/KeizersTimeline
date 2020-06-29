@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://kitkityanihh.github.io/KeizersTimeline/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "KIT",
   "license": "MIT",
   "dependencies": {
     "bourbon": "^7.0.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1"
   }
 }
